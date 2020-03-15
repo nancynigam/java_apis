@@ -33,7 +33,7 @@ Some implementations valid for both :
         return this.year - o.year;
     }
     
- // For String   
+ // For String (to arrange lexicographically.. Also this is case sensitive)
  @Override
     public int compare(Movies o1, Movies o2) {
         return o1.getName().compareTo(o2.getName());
