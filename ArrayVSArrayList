@@ -9,3 +9,11 @@ https://www.geeksforgeeks.org/g-fact-46/
    memory locations. Therefore in ArrayList, the actual objects are never stored at contiguous locations. References of the actual objects are stored at contiguous locations.
    In array, it depends whether the arrays is of primitive type or object type. In case of primitive types, actual values are 
    contiguous locations, but in case of objects, allocation is similar to ArrayList.
+5. Resizable :   Array is static in size that is fixed length data structure, One can not change the length after creating the Array object.
+ArrayList is dynamic in size . Each ArrayList object  has instance variable capacity which indicates the size of the ArrayList. As elements are added to an ArrayList its capacity grows automatically.
+
+6. Performance : Performance of Array and ArrayList depends on the operation you are performing :
+
+resize() opertation : Automatic resize of ArrayList will slow down the performance as it will use temporary array to copy elements from the old array to new array.
+ArrayList is internally backed by Array during resizing  as it calls the native implemented method System.arrayCopy(src,srcPos,dest,destPos,length) .
+
