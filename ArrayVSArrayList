@@ -1,0 +1,11 @@
+https://www.geeksforgeeks.org/array-vs-arraylist-in-java/
+https://www.geeksforgeeks.org/g-fact-46/
+
+1. An array is basic functionality provided by Java. ArrayList is part of collection framework in Java.
+2. Array is a fixed size data structure while ArrayList is not. 
+3. Array can contain both primitive data types as well as objects of a class depending on the definition of the array. 
+   However, ArrayList only supports object entries, not the primitive data types.
+4. Since ArrayList can’t be created for primitive data types, members of ArrayList are always references to objects at different 
+   memory locations. Therefore in ArrayList, the actual objects are never stored at contiguous locations. References of the actual objects are stored at contiguous locations.
+   In array, it depends whether the arrays is of primitive type or object type. In case of primitive types, actual values are 
+   contiguous locations, but in case of objects, allocation is similar to ArrayList.
